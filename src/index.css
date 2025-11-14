@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, rgb(255, 134, 42) 0%, rgb(118, 75, 162) 100%);
+  min-height: 100vh;
+  color: rgb(51, 51, 51);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.nav {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgb(74, 85, 104);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background: rgb(102, 126, 234);
+  color: white;
+}
+
+.nav-link.active {
+  background: rgb(102, 126, 234);
+  color: white;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary {
+  background: rgb(102, 126, 234);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: rgb(90, 111, 216);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: rgb(226, 232, 240);
+  color: rgb(74, 85, 104);
+}
+
+.btn-secondary:hover {
+  background: rgb(203, 213, 224);
+}
+
+.btn-danger {
+  background: rgb(229, 62, 62);
+  color: white;
+}
+
+.btn-danger:hover {
+  background: rgb(197, 48, 48);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: rgb(74, 85, 104);
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid rgb(226, 232, 240);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: rgb(102, 126, 234);
+}
+
+.attribute-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.attribute-option {
+  padding: 1rem;
+  border: 2px solid rgb(226, 232, 240);
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.attribute-option:hover {
+  border-color: rgb(102, 126, 234);
+  transform: translateY(-2px);
+}
+
+.attribute-option.selected {
+  border-color: rgb(102, 126, 234);
+  background: rgb(102, 126, 234);
+  color: white;
+}
+
+.crewmate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.crewmate-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.crewmate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.crewmate-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.attribute-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: rgb(226, 232, 240);
+  border-radius: 20px;
+  font-size: 0.875rem;
+  margin: 0.25rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: rgb(74, 85, 104);
+}
+
+.error {
+  background: rgb(254, 215, 215);
+  color: rgb(197, 48, 48);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.success {
+  background: rgb(198, 246, 213);
+  color: rgb(45, 119, 65);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
